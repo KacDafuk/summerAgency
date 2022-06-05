@@ -1,0 +1,14 @@
+.project {
+  width: 25%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2.5rem;
+}
+.projectBackground {
+  background-repeat: no-repeat;
+  background-size: 55% 100%;
+  background-position: center right;
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+.technologyLink {
+  background-color: var(--lead);
+  color: var(--primary);
+  font-size: var(--font-sm);
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+  transition: all 0.4s;
+  border: 1px var(--lead-darker) solid;
+}
+.technologyLink:hover {
+  background-color: var(--secondary);
+}
+.technologyContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.technologyContainerWorks {
+  margin-left: 2rem;
+}
+
+.technologyLinkWorks {
+  background-color: var(--secondary);
+  padding: 0.4em 0.8em;
+}
+.technologyLinkWorks:hover {
+  background-color: var(--lead-darker);
+}
+@media all and (min-width: 772px) {
+  .technologyContainerWorks {
+    margin-left: 4.6rem;
+  }
+}

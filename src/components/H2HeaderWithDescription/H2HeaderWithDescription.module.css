@@ -1,0 +1,13 @@
+.h2Header {
+  font-size: var(--font-x-lg);
+}
+.description {
+  font-size: var(--font-sm);
+  color: var(--lead);
+}
+.headerWithDescriptionContainer {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+}

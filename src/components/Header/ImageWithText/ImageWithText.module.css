@@ -1,0 +1,6 @@
+.imageWithText {
+  height: 100%;
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding-bottom: 9rem;
+}

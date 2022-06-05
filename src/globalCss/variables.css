@@ -1,0 +1,23 @@
+:root {
+  /*** COLORS ***/
+  --primary: white;
+  --secondary: black;
+  --secondary-lighter: rgb(30, 30, 30);
+  --lead-darker: #6d6f71;
+  --lead: #5d5f61;
+  --lead-lighter: #bdc1c5;
+  --highlight: #f97a33;
+  /*** FONT-SIZES ***/
+  --font-sm: 13px;
+  --font-x-sm: 24px;
+  --font-md: 18px;
+  --font-lg: 32px;
+  --font-x-lg: 45px;
+
+  /*** break points ***/
+  --screen-sm: 485px;
+  --screen-md: 772px;
+  --screen-lg: 992px;
+  /***Note the above aren't used as variables in the code they serve more as an orientation
+  point at which widhts should screen break***/
+}

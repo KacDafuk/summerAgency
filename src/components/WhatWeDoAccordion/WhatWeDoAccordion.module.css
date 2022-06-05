@@ -1,0 +1,58 @@
+.accordionQuestionsContainer {
+  padding: 2.5rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-around;
+}
+
+.accordionQuestionHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-lg);
+  color: var(--lead);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.accordionQuestionText {
+  font-size: var(--font-sm);
+  color: var(--lead);
+  height: 0;
+  margin-top: 1.4rem;
+}
+.accordionQuestion {
+  height: 60px;
+  max-height: 150px;
+  overflow: hidden;
+  transition: all 0.4s;
+  margin-top: 0.5rem;
+}
+.accordionQuestionActive {
+  height: 150px;
+  color: var(--primary);
+  border-bottom: 1px gainsboro solid;
+}
+.accordionQuestionActive .accordionQuestionHeader {
+  color: var(--primary);
+}
+.arrowActive {
+  transform: rotate(-180deg);
+}
+.accordionQuestion i {
+  transition: all 1.4s;
+  transform-origin: 50% 30%;
+}
+.accordionQuestionHeader:hover {
+  color: var(--primary);
+}
+@media all and (min-width: 772px) {
+  .accordionQuestion {
+    width: 45%;
+  }
+}
+@media all and (min-width: 992px) {
+  .accordionQuestion {
+    width: 45%;
+  }
+}

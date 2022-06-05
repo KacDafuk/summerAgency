@@ -1,0 +1,5 @@
+.lightHeader {
+  font-size: var(--font-sm);
+  color: var(--primary);
+  margin-bottom: 2rem;
+}

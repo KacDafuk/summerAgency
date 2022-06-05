@@ -1,0 +1,115 @@
+.getStartedFormContainer {
+  background-color: var(--secondary);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  column-gap: 7rem;
+}
+.getStartedFormContainer input[type="radio"] {
+  position: relative;
+}
+.getStartedFormContainer input[type="checkbox"] {
+  accent-color: var(--highlight);
+  transform: scale(1.2);
+  background-color: black;
+}
+.getStartedFormContainer input[type="radio"]::after,
+.getStartedFormContainer input[type="checkbox"]::after {
+  content: "";
+  display: block;
+  width: 105%;
+  height: 105%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 1px var(--lead-lighter) solid;
+  opacity: 1;
+  transition: all 0.4s;
+}
+.getStartedFormContainer input[type="radio"]::after {
+  border-radius: 100%;
+}
+.getStartedFormContainer input[type="checkbox"]::after {
+  height: 120%;
+  width: 120%;
+}
+.getStartedFormContainer input[type="checkbox"]:checked::before {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="black" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>');
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: -155%;
+  left: 15%;
+  z-index: 10;
+  color: black;
+}
+.getStartedFormContainer input[type="checkbox"]:checked::after {
+  background-color: var(--highlight);
+}
+.getStartedFormContainer input[type="radio"]:checked::after {
+  border: 3px var(--highlight) solid;
+  width: calc(10%-3px);
+  height: calc(100%-3px);
+}
+.aboutChallengecontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.getStartedForm {
+  display: flex;
+  background-color: var(--secondary);
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+.getStartedForm input {
+  background-color: var(--secondary);
+  border-bottom: 1px var(--lead-darker) solid;
+  transition: all 0.4s;
+  font-size: var(--font-lg);
+  color: var(--primary);
+}
+.getStartedForm input:focus {
+  border-bottom-color: var(--lead-lighter);
+}
+.inputLabel {
+  color: var(--primary);
+}
+.getStartedForm input::placeholder {
+  color: var(--lead-darker);
+}
+.inputLabelTopGap {
+  margin-top: 1.5rem;
+}
+.projectTypesContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  cursor: pointer;
+}
+.demandInput {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px var(--lead-darker) solid;
+  color: var(--lead-darker);
+  font-size: var(--font-lg);
+  align-items: center;
+  padding-bottom: 0.25rem;
+  cursor: pointer;
+}
+@media all and (min-width: 992px) {
+  .getStartedFormContainer {
+    flex-direction: row;
+  }
+  .aboutChallengecontainer {
+    width: 20%;
+  }
+  .getStartedForm {
+    width: 35%;
+  }
+}

@@ -1,0 +1,24 @@
+.mainHeader {
+  font-size: 10vw;
+  letter-spacing: 0.3rem;
+  margin-top: 6rem;
+  margin-left: 1.5rem;
+  width: 90%;
+}
+@media screen and (min-width: 485px) {
+  .mainHeader {
+    font-size: 8vw;
+  }
+}
+@media screen and (min-width: 772px) {
+  .mainHeader {
+    font-size: 6vw;
+    width: 75%;
+    margin-left: 4.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mainHeader {
+    font-size: 5vw;
+  }
+}
