@@ -3,10 +3,16 @@ import styles from "./H1Header.module.css";
 type H1HeaderProps = {
   text: string;
   white?: true;
+  centerVertically?: true;
 };
-const H1Header = ({ text, white }: H1HeaderProps) => {
+const H1Header = ({ text, white, centerVertically }: H1HeaderProps) => {
   return (
-    <h1 className={styles.mainHeader} style={white && { color: "white" }}>
+    <h1
+      className={`${styles.mainHeader} ${
+        centerVertically && styles.centerVert
+      }`}
+      style={white && { color: "white" }}
+    >
       {text}
     </h1>
   );

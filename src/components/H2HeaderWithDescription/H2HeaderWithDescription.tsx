@@ -7,13 +7,24 @@ const H2HeaderWithDescription = ({
   description,
   button,
   color,
+  fontSizeH2,
+  fontSizeDescription,
 }: HeaderPropsWithDescription) => {
   return (
     <section className={styles.headerWithDescriptionContainer}>
       <h2 className={styles.h2Header} style={color && { color: color }}>
-        {text}
+        <span style={fontSizeH2 && { fontSize: `var(${fontSizeH2})` }}>
+          {text}
+        </span>
       </h2>
-      <p className={styles.description}>{description}</p>
+      <p
+        className={styles.description}
+        style={
+          fontSizeDescription && { fontSize: `var(${fontSizeDescription})` }
+        }
+      >
+        {description}
+      </p>
       {button && (
         <Btn
           text={button.text}

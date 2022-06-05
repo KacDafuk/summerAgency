@@ -1,7 +1,13 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import styles from "./Works.module.css";
+import WorksProjects from "./WorksProjects/WorksProjects";
 const Works = () => {
-  return <div>Works</div>;
+  return (
+    <main>
+      <WorksProjects />
+    </main>
+  );
 };
 
 export default Works;

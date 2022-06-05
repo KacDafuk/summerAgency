@@ -10,7 +10,7 @@ const Routes = () => {
     <Switch>
       <Route path="/main" element={<Main />} />
       <Route path="/about" element={<About />} />
-      <Route path="/works" element={<Works />} />
+      <Route path="/works/:technology" element={<Works />} />
       <Route path="/services" element={<Services />} />
       <Route path="/career" element={<Career />} />
       <Route path="/" element={<Main />} />

@@ -1,0 +1,36 @@
+.projectImageOuter {
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.worksProjectContainer:nth-child(2) {
+  border-end-end-radius: 100px;
+}
+.projectImageOuter:hover {
+  border-radius: 5rem;
+}
+.projectImageInner {
+  padding: var(--left-indent);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.worksProjectContainer {
+  width: 100%;
+}
+.projectInfo {
+  background-color: var(--secondary);
+  padding-top: 3rem;
+  padding-left: var(--left-indent);
+}
+@media all and (min-width: 772px) {
+  .worksProjectContainer {
+    width: 50%;
+  }
+  .projectImageInner {
+    width: 50%;
+  }
+}

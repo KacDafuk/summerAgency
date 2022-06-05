@@ -1,4 +1,5 @@
 :root {
+  --left-indent: 2.5rem; /***basic distance of elements from the left of the screen ***/
   /*** COLORS ***/
   --primary: white;
   --secondary: black;
@@ -11,6 +12,7 @@
   --font-sm: 13px;
   --font-x-sm: 24px;
   --font-md: 18px;
+  --font-x-md: 24px;
   --font-lg: 32px;
   --font-x-lg: 45px;
 

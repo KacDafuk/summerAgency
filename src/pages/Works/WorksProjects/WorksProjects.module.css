@@ -1,0 +1,13 @@
+.workProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+@media all and (min-width: 772px) {
+  .workProjectsContainer {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -5,8 +5,11 @@
   flex-direction: column;
   height: 90vh;
   justify-content: space-around;
+  width: 100%;
 }
-
+.accordionInner {
+  width: 100%;
+}
 .accordionQuestionHeader {
   display: flex;
   justify-content: space-between;
@@ -27,6 +30,7 @@
   overflow: hidden;
   transition: all 0.4s;
   margin-top: 0.5rem;
+  width: 100% !important;
 }
 .accordionQuestionActive {
   height: 150px;
@@ -46,13 +50,18 @@
 .accordionQuestionHeader:hover {
   color: var(--primary);
 }
-@media all and (min-width: 772px) {
-  .accordionQuestion {
-    width: 45%;
-  }
+.accordionQuestionsContainer::after {
+  content: "";
+  display: block;
+  height: 90%;
+  background-color: var(--secondary);
+  z-index: -100;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 @media all and (min-width: 992px) {
-  .accordionQuestion {
+  .accordionQuestionsContainer {
     width: 45%;
   }
 }

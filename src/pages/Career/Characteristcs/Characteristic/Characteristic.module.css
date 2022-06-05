@@ -1,0 +1,7 @@
+.characteristic {
+  width: 33%;
+  margin-left: 2.5rem;
+}
+.characteristic:nth-child(2) {
+  order: -10;
+}

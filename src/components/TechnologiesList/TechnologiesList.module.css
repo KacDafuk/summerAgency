@@ -1,5 +1,5 @@
 .technologyLink {
-  background-color: var(--lead);
+  background-color: var(--lead-lighter);
   color: var(--primary);
   font-size: var(--font-sm);
   padding: 0.1rem 0.5rem;

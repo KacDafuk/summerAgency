@@ -16,7 +16,7 @@ const WhatWeDoAccordion = () => {
   }
   return (
     <article className={styles.accordionQuestionsContainer}>
-      <section className="accordionTop">
+      <section className={styles.accordionInner}>
         <LightHeader text="WHAT WE DO" color={"white"} />
         <dl>
           {accordionData.map(({ title, text }, idx) => (

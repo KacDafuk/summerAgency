@@ -32,7 +32,6 @@ const GetStartedForm = () => {
       projectAbout: "",
     });
     setCheckedCheckboxes([]);
-    alert("hello");
   }
   function getCorrectQuestionText() {
     return clietnDemands.find(({ demand }) => currentQuestionDemand === demand)!
@@ -61,7 +60,6 @@ const GetStartedForm = () => {
         <H2HeaderWithDescription
           text="Let’s get started"
           description="We're always looking for a challenge.Got a project in mind?"
-          button={false}
           color="white"
         />
       </section>

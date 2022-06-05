@@ -1,0 +1,11 @@
+.accordionWithListContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 992px) {
+  .accordionWithListContainer {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+}

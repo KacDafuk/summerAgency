@@ -11,7 +11,7 @@ const WorksHeader = ({ children }: WorksHeaderProps) => {
       {children}
       <H1Header text="Our works" white={true} />
       <TechnologiesList
-        technologies={["HARDWARE", "DESIGN", "UI/UX", "IOS", "ANDROID", "WEB"]}
+        technologies={["ALL","HARDWARE", "DESIGN", "UI/UX", "IOS", "ANDROID", "WEB"]}
         worksHeader={true}
       />
     </article>

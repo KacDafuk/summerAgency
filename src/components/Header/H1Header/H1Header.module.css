@@ -2,9 +2,16 @@
   font-size: 10vw;
   letter-spacing: 0.3rem;
   margin-top: 6rem;
-  margin-left: 1.5rem;
+  margin-left: 2.5rem;
   width: 90%;
 }
+.centerVert {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  height: 100%;
+}
+
 @media screen and (min-width: 485px) {
   .mainHeader {
     font-size: 8vw;

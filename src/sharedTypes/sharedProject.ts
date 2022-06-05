@@ -4,7 +4,8 @@ export type Technologies =
   | "UI/UX"
   | "IOS"
   | "ANDROID"
-  | "WEB";
+  | "WEB"
+  | "ALL";
 export type ProjectProps = {
   h1Text: string;
   h2Text: string;

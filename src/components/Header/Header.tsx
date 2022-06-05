@@ -20,16 +20,17 @@ const Header = () => {
       </ImageWithText>
     );
   }
-  switch (pathname) {
-    case "/works":
-      return (
-        <WorksHeader>
-          <Navbar />
-        </WorksHeader>
-      );
-    case "/contacts":
-      return <div></div>;
+  if (pathname.includes("/works")) {
+    return (
+      <WorksHeader>
+        <Navbar />
+      </WorksHeader>
+    );
   }
+  if (pathname === "/contacts") {
+    return <div>CONTACTS</div>;
+  }
+
   return <div>error</div>;
 };
 

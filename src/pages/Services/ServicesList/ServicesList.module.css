@@ -1,0 +1,48 @@
+.servicesListContainer {
+  width: 100%;
+  background-color: var(--secondary);
+  display: flex;
+  column-gap: 8rem;
+  padding: var(--left-indent);
+  justify-content: space-between;
+  flex-direction: column;
+}
+.servicesListContainer::after {
+  padding-bottom: 7rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary);
+  z-index: -100;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.technologiesList {
+  color: var(--primary);
+  font-size: var(--font-x-md);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+.listGeneral {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 3rem;
+}
+
+@media all and (min-width: 992px) {
+  .servicesListContainer {
+    flex-direction: row;
+    width: 70%;
+  }
+  .listGeneral {
+    row-gap: 4rem;
+  }
+}
