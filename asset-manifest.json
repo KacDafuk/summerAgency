@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/summeragency/static/css/main.4e544bec.css",
+    "main.js": "/summeragency/static/js/main.3894a7a7.js",
+    "static/media/careerMultisport.png": "/summeragency/static/media/careerMultisport.2846e408807656475875.png",
+    "static/media/healthcare.png": "/summeragency/static/media/healthcare.fec564fd28f06477a2af.png",
+    "static/media/retail.png": "/summeragency/static/media/retail.4e19866fd72f8f85941b.png",
+    "static/media/industry.png": "/summeragency/static/media/industry.f12b8cfa134d2850733d.png",
+    "static/media/iot.png": "/summeragency/static/media/iot.35d2746a6d3ee1f53421.png",
+    "static/media/bankingKyc.png": "/summeragency/static/media/bankingKyc.18fdd1f1c5b4eb646c0b.png",
+    "static/media/worksPhoton.png": "/summeragency/static/media/worksPhoton.a36438ce23d6aeaf21d2.png",
+    "static/media/careerOffice.jpg": "/summeragency/static/media/careerOffice.2ab0384f83c82d467ba2.jpg",
+    "static/media/career.jpg": "/summeragency/static/media/career.efffe25a42eefb4be6a8.jpg",
+    "static/media/smartcity.jpg": "/summeragency/static/media/smartcity.e69587e6de68009f0281.jpg",
+    "static/media/careerEntertiment.jpg": "/summeragency/static/media/careerEntertiment.dcc58a94c1b61ea50369.jpg",
+    "static/media/careerMedical.jpg": "/summeragency/static/media/careerMedical.e3f72a67bc9a04fb7821.jpg",
+    "static/media/services.jpg": "/summeragency/static/media/services.b136b84e8ff77eac8199.jpg",
+    "static/media/careerLearning.jpg": "/summeragency/static/media/careerLearning.71bf743a00c2d74e924a.jpg",
+    "static/media/about2.jpg": "/summeragency/static/media/about2.dbe731787ad7ab53f00e.jpg",
+    "static/media/worksKyc.png": "/summeragency/static/media/worksKyc.0c63ce78c3419851d837.png",
+    "static/media/bankingHigo.png": "/summeragency/static/media/bankingHigo.71325d7843bf91ec12ca.png",
+    "static/media/about.jpg": "/summeragency/static/media/about.fdc81e4a231c39430c7b.jpg",
+    "static/media/worksAutomatedStore.png": "/summeragency/static/media/worksAutomatedStore.e5b4fb74b9eb12a9e4d5.png",
+    "static/media/allProjects.png": "/summeragency/static/media/allProjects.fa20d6a2c4873a8b9b11.png",
+    "static/media/worksMagicGalaxy.png": "/summeragency/static/media/worksMagicGalaxy.f6404dd78cc077d31840.png",
+    "static/media/bankingHigoWorks.png": "/summeragency/static/media/bankingHigoWorks.2d28cefba00ad8e22348.png",
+    "static/media/worksIntroducer.png": "/summeragency/static/media/worksIntroducer.fed84936faeaeb346713.png",
+    "static/media/careerInnovation.png": "/summeragency/static/media/careerInnovation.38348eaf1f435dd898d3.png",
+    "static/media/main.jpg": "/summeragency/static/media/main.50e9ba3b4966b19c7f4e.jpg",
+    "static/media/careerGrowth.png": "/summeragency/static/media/careerGrowth.986af404f17b1bb4933b.png",
+    "static/media/careerFreedom.png": "/summeragency/static/media/careerFreedom.a629b289c7987e30b22b.png",
+    "static/media/logo.svg": "/summeragency/static/media/logo.ed8b92659679ca58e31b.svg",
+    "index.html": "/summeragency/index.html",
+    "main.4e544bec.css.map": "/summeragency/static/css/main.4e544bec.css.map",
+    "main.3894a7a7.js.map": "/summeragency/static/js/main.3894a7a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e544bec.css",
+    "static/js/main.3894a7a7.js"
+  ]
+}
