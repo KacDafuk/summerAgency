@@ -1,0 +1,55 @@
+.contactHeader {
+  background-color: var(--secondary);
+}
+.companyInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 3rem;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.companyInfoArticle {
+  height: 150px;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  width: 55%;
+}
+.companyInfoArticle:nth-child(2) {
+  margin-top: 1rem;
+}
+.companyInfoArticle > span {
+  color: var(--lead);
+  font-size: var(--font-x-sm);
+  line-height: 2.5rem;
+}
+.invoice {
+  margin-right: 3rem;
+  border-left: 1px var(--lead) solid;
+  padding-left: 2rem;
+  height: 140px;
+  font-size: var(--font-sm);
+}
+.invoiceText {
+  color: var(--lead);
+}
+
+@media all and (min-width: 772px) {
+  .companyInfo {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .invoice {
+    width: 25%;
+  }
+  .companyInfoArticle {
+    margin-left: 4.5rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .companyInfo {
+    width: 100%;
+  }
+}

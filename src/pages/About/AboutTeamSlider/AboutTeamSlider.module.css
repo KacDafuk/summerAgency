@@ -1,0 +1,23 @@
+.aboutTeamContainer {
+  width: 95%;
+  background-color: var(--black);
+  padding-bottom: 2.5rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+.aboutTeamParagraph {
+  color: var(--lead);
+  font-size: var(--font-x-md);
+}
+@media all and (min-width: 772px) {
+  .aboutTeamText {
+    width: 52%;
+    padding: var(--left-indent);
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 772px) {
+  .aboutTeamContainer {
+    width: 100%;
+  }
+}

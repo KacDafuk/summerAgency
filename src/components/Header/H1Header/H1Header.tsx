@@ -4,13 +4,19 @@ type H1HeaderProps = {
   text: string;
   white?: true;
   centerVertically?: true;
+  centerHorizontally?: true;
 };
-const H1Header = ({ text, white, centerVertically }: H1HeaderProps) => {
+const H1Header = ({
+  text,
+  white,
+  centerVertically,
+  centerHorizontally,
+}: H1HeaderProps) => {
   return (
     <h1
       className={`${styles.mainHeader} ${
         centerVertically && styles.centerVert
-      }`}
+      } ${centerHorizontally && styles.centerHorizontally}`}
       style={white && { color: "white" }}
     >
       {text}

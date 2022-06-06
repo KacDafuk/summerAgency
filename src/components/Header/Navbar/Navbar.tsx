@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const Navbar = () => {
-  const [navVisible, setNavVisible] = useState(true);
+  const [navVisible, setNavVisible] = useState(false);
+  const navigate = useNavigate();
+  function goToMain() {}
   function getNavSmallScreenDisplay() {
     return navVisible ? styles.navActive : styles.navHidden;
   }
   return (
     <nav>
       <ul className={styles.nav}>
-        <li className={styles.navLogo}>
-          <Link to="/main" style={{ backgroundImage: `url()` }}>
-            IMAGE
-          </Link>
+        <li className={styles.navLogo} onClick={() => navigate("/main")}>
+          <Link to="/main"></Link>
         </li>
         <li className={styles.navLinksOuter}>
           <ul className={`${styles.navLinks} ${getNavSmallScreenDisplay()}`}>

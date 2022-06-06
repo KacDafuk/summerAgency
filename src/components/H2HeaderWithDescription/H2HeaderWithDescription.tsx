@@ -9,22 +9,37 @@ const H2HeaderWithDescription = ({
   color,
   fontSizeH2,
   fontSizeDescription,
+  counter,
+  carouselHeader,
 }: HeaderPropsWithDescription) => {
+  function getCounter() {
+    if (counter) {
+      return counter < 10 ? "0" + counter : counter;
+    }
+  }
+  console.log(carouselHeader, description, "CAR");
   return (
-    <section className={styles.headerWithDescriptionContainer}>
+    <section
+      className={`${styles.headerWithDescriptionContainer} ${
+        carouselHeader && styles.carouselHeader
+      }`}
+    >
       <h2 className={styles.h2Header} style={color && { color: color }}>
+        <span className={styles.counter}>{getCounter()}</span>
         <span style={fontSizeH2 && { fontSize: `var(${fontSizeH2})` }}>
           {text}
         </span>
       </h2>
-      <p
-        className={styles.description}
-        style={
-          fontSizeDescription && { fontSize: `var(${fontSizeDescription})` }
-        }
-      >
-        {description}
-      </p>
+      {description && (
+        <p
+          className={styles.description}
+          style={
+            fontSizeDescription && { fontSize: `var(${fontSizeDescription})` }
+          }
+        >
+          {description}
+        </p>
+      )}
       {button && (
         <Btn
           text={button.text}

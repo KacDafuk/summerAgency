@@ -59,24 +59,3 @@ const Footer = () => {
 };
 
 export default Footer;
-//
-//
-//
-//
-//
-//
-// © Summer Agency. All rights reserved 2021
-
-// Quick Links
-// About
-// Works
-// Services
-// Career
-// Contact
-
-// Projects
-// Design
-// UI/UX
-// iOS
-// Android
-// Web

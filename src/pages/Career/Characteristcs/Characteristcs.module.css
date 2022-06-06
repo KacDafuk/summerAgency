@@ -1,3 +1,12 @@
 .characteristcsContainer {
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: var(--left-indent);
+  margin-top: 2.5rem;
+}
+@media all and (min-width: 992px) {
+  .characteristcsContainer {
+    flex-direction: row;
+  }
 }

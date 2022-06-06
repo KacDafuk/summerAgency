@@ -1,0 +1,51 @@
+.aboutTeamContainer {
+  display: flex;
+  width: 100%;
+  padding: var(--left-indent);
+  flex-direction: column;
+}
+
+.aboutTeamParagraph {
+  font-size: var(--font-x-md);
+  color: var(--primary);
+}
+.aboutTeamSummary {
+  font-size: var(--font-sm);
+  color: var(--lead);
+  margin-top: 2.5rem;
+}
+.aboutTeamNumbers {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.aboutTeamNumbers > *:first-child {
+  margin-top: 2.5rem;
+}
+@media all and (min-width: 772px) {
+  .aboutTeamNumbers > *:first-child {
+    align-self: center;
+    margin-top: 0;
+  }
+  .aboutTeamNumbers > *:nth-child(2) {
+    align-self: flex-start;
+  }
+  .aboutTeamNumbers > *:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+@media all and (min-width: 992px) {
+  .aboutTeamContainer {
+    flex-direction: row;
+  }
+  .aboutTeamNumbers {
+    width: 50%;
+  }
+  .aboutTeamTextWrapper {
+    width: 60%;
+  }
+  .aboutTeamText {
+    width: 70%;
+  }
+}

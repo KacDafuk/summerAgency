@@ -1,5 +1,12 @@
-export type SlideData = {
-  imgSrc: string;
+export type SlideDataImg = {
   headerText: string;
+  imgSrc: string;
+  descriptionText?: string;
 };
-export type SliderData = SlideData[];
+export type SlideDataQuote = {
+  quote: string;
+  author: string;
+  position: string;
+  firm: string;
+};
+export type SliderData = SlideDataImg[] | SlideDataQuote[];

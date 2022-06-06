@@ -4,15 +4,15 @@ import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import WorksHeader from "./WorksHeader/WorksHeader";
 import ImageWithText from "./ImageWithText/ImageWithText";
+import ContactHeader from "./ContactHeader/ContactHeader";
 const pathsImageWithText = ["/main", "/about", "/services", "/career", "/"];
-const pathsCustomHeader = ["/works", "/contacts"];
 const Header = () => {
   const { pathname } = useLocation();
   console.log(pathname);
   function isImageWithTextPath() {
     return pathsImageWithText.includes(pathname);
   }
-
+  if (pathname.includes("/contact")) console.log("CONTACT");
   if (isImageWithTextPath()) {
     return (
       <ImageWithText>
@@ -27,8 +27,12 @@ const Header = () => {
       </WorksHeader>
     );
   }
-  if (pathname === "/contacts") {
-    return <div>CONTACTS</div>;
+  if (pathname.includes("/contact")) {
+    return (
+      <ContactHeader>
+        <Navbar />
+      </ContactHeader>
+    );
   }
 
   return <div>error</div>;

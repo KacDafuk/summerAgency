@@ -11,6 +11,11 @@
   margin-top: 3rem;
   height: 100%;
 }
+.centerHorizontally {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 65% !important;
+}
 
 @media screen and (min-width: 485px) {
   .mainHeader {

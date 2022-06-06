@@ -1,3 +1,12 @@
+export const technologiesArray = [
+  "HARDWARE",
+  "DESIGN",
+  "UI/UX",
+  "IOS",
+  "ANDROID",
+  "WEB",
+  "ALL",
+];
 export type Technologies =
   | "HARDWARE"
   | "DESIGN"

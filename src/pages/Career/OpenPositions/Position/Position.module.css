@@ -1,0 +1,35 @@
+.position {
+  padding: var(--left-indent);
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.4s;
+  left: 0;
+  cursor: pointer;
+  border-bottom: 1px var(--lead-lighter) solid;
+}
+.jobHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.jobHeader > i {
+  margin-right: 1rem;
+}
+.jobInfo {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.position:hover {
+  opacity: 1;
+  left: 2.5rem;
+}
+@media all and (min-width: 485px) {
+  .jobHeader {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}

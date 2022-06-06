@@ -6,8 +6,8 @@ import BankingKycSrc from "../../../assets/Projects/imagesProjects/bankingKyc.pn
 import { useNavigate } from "react-router-dom";
 const Projects = () => {
   const navigate = useNavigate();
-  function navigateToKyc() {
-    navigate("/works");
+  function navigateToWorks() {
+    navigate("/works/all");
   }
   return (
     <article className={styles.projectsContainer}>
@@ -24,7 +24,7 @@ const Projects = () => {
         text={"Small medical device and telemedical solution"}
         technologies={["UI/UX", "IOS", "ANDROID", "WEB"]}
         backgroundUrl={BankingKycSrc}
-        action={navigateToKyc}
+        action={navigateToWorks}
       />
     </article>
   );

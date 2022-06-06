@@ -3,4 +3,12 @@
   background-color: var(--secondary);
   color: var(--primary);
   padding-bottom: 9rem;
+  background-size: cover;
+  height: 75vh;
+}
+@media all and (min-width: 992px) {
+  .imageWithText {
+    height: 95vh;
+    background-size: 100% 100%;
+  }
 }

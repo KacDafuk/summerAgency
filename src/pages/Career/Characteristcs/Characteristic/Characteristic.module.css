@@ -1,7 +1,29 @@
 .characteristic {
-  width: 33%;
-  margin-left: 2.5rem;
+  width: 100%;
+  padding-top: 2.5rem;
 }
-.characteristic:nth-child(2) {
-  order: -10;
+.characteristicImage {
+  height: 175px;
+  padding-bottom: 2rem;
+}
+.breakLine {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--lead-darker);
+}
+.innovationText {
+  font-size: var(--font-x-md);
+  padding-bottom: 3.5rem;
+}
+.characteristic {
+}
+@media all and (min-width: 992px) {
+  .headerContainerCharacteristic {
+    width: min-content;
+  }
+  .headerContainerCharacteristic:nth-child(2) {
+    width: min-content;
+    order: -10;
+    align-self: center;
+  }
 }

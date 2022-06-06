@@ -23,8 +23,9 @@ const GetStartedForm = () => {
   }
   function submit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
-    console.log(textInputs);
-    console.log(checkedCheckboxes);
+    console.table(textInputs);
+    console.log(checkedCheckboxes, "YOUR CHECKBOXES");
+    alert("check console to see your data");
     setTextInputs({
       name: "",
       email: "",
@@ -73,6 +74,7 @@ const GetStartedForm = () => {
           onChange={modifyTextInputs}
           placeholder="Type here"
           required
+          value={textInputs["name"]}
         />
         <label htmlFor="email" className={styles.inputLabel}>
           Your Email
@@ -83,6 +85,7 @@ const GetStartedForm = () => {
           onChange={modifyTextInputs}
           placeholder="Type here"
           required
+          value={textInputs["email"]}
         />
         <label
           htmlFor=""
@@ -117,6 +120,7 @@ const GetStartedForm = () => {
               placeholder="Type here"
               id="projectType"
               onChange={modifyTextInputs}
+              value={textInputs["projectType"]}
             />
           ) : (
             clietnDemands
@@ -146,6 +150,7 @@ const GetStartedForm = () => {
           placeholder="Type here"
           id="projectAbout"
           onChange={modifyTextInputs}
+          value={textInputs["projectAbout"]}
         />
         <Btn
           text="send"

@@ -19,7 +19,7 @@ const TechnologiesList = ({
     >
       {technologies.map((technology) => (
         <Link
-          to={`/works/${technology}`}
+          to={`/works/${technology.toLowerCase().split("/").join("")}`}
           className={`${styles.technologyLink} ${
             worksHeader && styles.technologyLinkWorks
           }`}

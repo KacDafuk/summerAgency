@@ -16,25 +16,23 @@ const WorkProject = ({
     return "black";
   }
   return (
-    <article>
-      <article className={styles.worksProjectContainer}>
-        <section
-          className={styles.projectImageOuter}
-          style={{ backgroundImage: `url(${backgroundUrl})` }}
-        >
-          <section className={styles.projectImageInner}>
-            <LightHeader text={h1Text} color={getRightHeaderColor()} />
-            <TechnologiesList technologies={technologies} />
-          </section>
+    <article className={styles.worksProjectContainer}>
+      <section
+        className={styles.projectImageOuter}
+        style={{ backgroundImage: `url(${backgroundUrl})`, width: "100%" }}
+      >
+        <section className={styles.projectImageInner}>
+          <LightHeader text={h1Text} color={getRightHeaderColor()} />
+          <TechnologiesList technologies={technologies} />
         </section>
-        <section className={styles.projectInfo}>
-          <H2HeaderWithDescription
-            text={h2Text}
-            description={text}
-            color={"white"}
-          />
-        </section>
-      </article>
+      </section>
+      <section className={styles.projectInfo}>
+        <H2HeaderWithDescription
+          text={h2Text}
+          description={text}
+          color={"white"}
+        />
+      </section>
     </article>
   );
 };
